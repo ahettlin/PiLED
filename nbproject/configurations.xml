@@ -49,6 +49,8 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
+    <itemPath>LICENSE</itemPath>
+    <itemPath>README.md</itemPath>
   </logicalFolder>
   <sourceRootList>
     <Elem>FastLED</Elem>
@@ -106,9 +108,13 @@
       </item>
       <item path="FastLED/pixeltypes.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="LICENSE" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="PiLED.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="PiLED.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="README.md" ex="false" tool="3" flavor2="0">
       </item>
       <item path="examples/DemoReel100.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -165,9 +171,13 @@
       </item>
       <item path="FastLED/pixeltypes.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="LICENSE" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="PiLED.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="PiLED.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="README.md" ex="false" tool="3" flavor2="0">
       </item>
       <item path="examples/DemoReel100.cpp" ex="false" tool="1" flavor2="0">
       </item>
