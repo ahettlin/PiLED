@@ -7,16 +7,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/FastLED/lib8tion.h</file>
-            <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/PiLED.h</file>
             <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/FastLED/colorpalettes.h</file>
             <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/FastLED/hsv2rgb.h</file>
+            <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/main.cpp</file>
+            <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/PiLED.h</file>
             <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/FastLED/fastled_progmem.h</file>
             <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/FastLED/colorutils.cpp</file>
             <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/FastLED/colorutils.h</file>
             <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/FastLED/lib8tion/random8.h</file>
+            <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/README.md</file>
+            <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/.git/config</file>
             <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/FastLED/colorpalettes.cpp</file>
-            <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/main.cpp</file>
             <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/examples/DemoReel100.cpp</file>
             <file>file://MEDIA/Andrew/Documents/Development/Raspberry%20Pi/PiLED/PiLED.cpp</file>
         </group>

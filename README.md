@@ -23,7 +23,7 @@ Here's a quick example providing some blinking code:
 ```
 #include <wiringPi.h>
 #include "PiLED.h"
-
+ 
 CRGB leds[1];
 
 int main() {
