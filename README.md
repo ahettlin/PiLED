@@ -9,3 +9,33 @@ There are a few reasons for this: 1. I am only interested in that kind of light 
 This might change in the future as I develop my skills or someone decides to contribute.
 
 I have done my best to make this library work as close as possible to FastLED so that their documentation should be very helpful. The only difference so far is initializing the library. After that, all functions that manipulate colors will work the same.
+
+# Dependencies
+
+This project depends on WiringPi (http://wiringpi.com/), which appears to be bundled in Raspbian, so no action is needed if you are building on your Raspberry Pi.
+
+# Wiring
+
+Currently, you cannot specify pins for the data and clock.  PiLED uses the SPI connections, so you will use the `MOSI` pin for the data, and `SCLK` pin for the clock.
+
+# Quick Start
+Here's a quick example providing some blinking code:
+```
+#include <wiringPi.h>
+#include "PiLED.h"
+
+CRGB leds[1];
+
+int main() {
+	wiringPiSetup();
+	
+	PiLED piLED(leds, 1);
+	
+	for(;;) {
+		leds[0] = CRGB::White; piLED.show(); delay(30); 
+		leds[0] = CRGB::Black; piLED.show(); delay(30);
+	}
+
+	return 0;
+}
+```
