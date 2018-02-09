@@ -23,6 +23,7 @@
 #include "FastLED/hsv2rgb.h"
 #include "FastLED/colorutils.h"
 #include "FastLED/colorpalettes.h"
+#include "FastLED/noise.h"
 
 
 /// High level controller interface for PiLED.  This class manages controllers, global settings and trackings

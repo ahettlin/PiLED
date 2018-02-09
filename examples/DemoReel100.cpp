@@ -10,7 +10,7 @@
 //
 // -Mark Kriegsman, December 2014
 
-#define NUM_LEDS    30
+#define NUM_LEDS    300
 CRGB leds[NUM_LEDS];
 
 #define BRIGHTNESS          96

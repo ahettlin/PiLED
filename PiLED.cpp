@@ -9,7 +9,7 @@ PiLED::PiLED() {
 	colorCorrection = CRGB::White;
 	colorTemperature = CRGB::White;
 	
-	spiFileDescriptor = wiringPiSPISetup(0, 8000000); //Channel 0, 8MHz clock
+	spiFileDescriptor = wiringPiSPISetup(0, 6000000); //Channel 0, 6MHz clock
 	if (spiFileDescriptor < 0) {
 		fprintf(stderr, "SPI Setup failed: %s\n", strerror(errno));
 	}
