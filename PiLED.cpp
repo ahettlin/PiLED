@@ -21,25 +21,22 @@ PiLED::PiLED(struct CRGB *data, int nLeds) : PiLED() {
 }
 
 void PiLED::show(uint8_t brightness) {
-	//show(CRGB(50,50,50));
 	show(getAdjustment(brightness));
 }
 
-//void PiLED::showColor(const struct CRGB & color, uint8_t brightness) {
-//	for (int i=0; i<nLeds; i++) {
-//		int idx = 4*(i+1);
-//		buf[idx]	 = 255;
-//		buf[idx + 1] = color.b;
-//		buf[idx + 2] = color.g;
-//		buf[idx + 3] = color.r;
-//	}
-//	
-//	writeBufferToStrand();
-//}
+void PiLED::showColor(const struct CRGB & color, uint8_t brightness) {
+	CRGB scale = getAdjustment(brightness);
+	uint8_t ledBuffer[4] = {255, scale8(color.b, scale.b), scale8(color.g, scale.g), scale8(color.r, scale.r)};
+
+	write(spiFileDescriptor, (const uint8_t[]){0, 0, 0, 0}, 4); //start boundary
+	for (int i=0; i<nLeds; i++) {
+		write(spiFileDescriptor, ledBuffer, 4);
+	}
+}
 
 void PiLED::clear(bool writeData) {
 	if (writeData) {
-		//showColor(CRGB(0,0,0), 0);
+		showColor(CRGB(0,0,0), 0);
 	}
     clearData();
 }

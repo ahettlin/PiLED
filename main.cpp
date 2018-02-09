@@ -275,15 +275,24 @@ int main() {
 	piLED.setBrightness(BRIGHTNESS);
 	
 	piLED.setCorrection(0xFCFFF0);
-
+	
+	CHSV color = CHSV(0, 255, 255);
+	CRGB rgb;
+	
 	for (;;) {
 		//blendwave();
 		//blur();
-		confetti();
+		//confetti();
 		//dot_beat();
 		//inoise16_fill();
 		//ripple();
-		piLED.show();
+		hsv2rgb_rainbow(color, rgb);
+		piLED.showColor(rgb);
+		//delay(1000);
+		color.hue++;
+		if (color.hue == 255) {
+			color.hue = 0;
+		}
 	}
 	
 }
