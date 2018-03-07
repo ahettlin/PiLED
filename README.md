@@ -23,13 +23,15 @@ Here's a quick example providing some blinking code:
 ```C++
 #include <wiringPi.h>
 #include "PiLED.h"
+
+#define NUM_LEDS 1
  
-CRGB leds[1];
+CRGB leds[NUM_LEDS];
 
 int main() {
 	wiringPiSetup();
 	
-	PiLED piLED(leds, 1);
+	PiLED piLED(leds, NUM_LEDS);
 	
 	for(;;) {
 		leds[0] = CRGB::White; piLED.show(); delay(30); 
