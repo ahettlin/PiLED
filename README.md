@@ -1,6 +1,8 @@
 PiLED 0.0.1
 ===========
 
+**Based on FastLED 3.1.6**
+
 This is my attempt at porting the FastLED library (https://github.com/FastLED/FastLED) for use on the RaspberryPi.  I understand the reasoning for not including devices like the Pi in FastLed because of timing issues and driving certain kinds of light strips.
 I only wanted to drive APA102 (Dotstar) leds, which don't have strict timing requirements for their data signal.
 
